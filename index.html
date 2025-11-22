@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramuzone</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: #131921;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        .navbar .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .navbar input {
+            width: 40%;
+            padding: 8px;
+            border-radius: 4px;
+            border: none;
+            outline: none;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://m.media-amazon.com/images/I/71Ie3JXGfVL._SX3000_.jpg') no-repeat center/cover;
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 2px 2px 10px black;
+        }
+
+        /* Products Grid */
+        .products {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        .product img {
+            width: 100%;
+            height: 180px;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+
+        .product h3 {
+            margin-top: 10px;
+        }
+
+        .product p {
+            color: green;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        .footer {
+            background: #131921;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">Ramuzone</div>
+        <input type="text" placeholder="Search products..." />
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        Welcome to Ramuzone
+    </div>
+
+    <!-- Products Section -->
+    <div class="products">
+        
+        <div class="product">
+            <img src="https://m.media-amazon.com/images/I/61j17FtdyaL._AC_SL1500_.jpg" />
+            <h3>Headphones</h3>
+            <p>₹999</p>
+        </div>
+
+        <div class="product">
+            <img src="https://m.media-amazon.com/images/I/61-sIomGW-L._AC_SL1500_.jpg" />
+            <h3>Smart Watch</h3>
+            <p>₹1,499</p>
+        </div>
+
+        <div class="product">
+            <img src="https://m.media-amazon.com/images/I/71R1tD71F7L._AC_SL1500_.jpg" />
+            <h3>Bluetooth Speaker</h3>
+            <p>₹799</p>
+        </div>
+
+        <div class="product">
+            <img src="https://m.media-amazon.com/images/I/61u1VALn6JL._SL1500_.jpg" />
+            <h3>Backpack</h3>
+            <p>₹699</p>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        © 2025 Ramuzone — All Rights Reserved
+    </div>
+
+</body>
+</html>
